@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#CFD8DC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"></include>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        card_view:cardBackgroundColor="#03A9F4"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="6dp"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="14"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:gravity="center"
+                    android:background="#455A64"
+                    android:text="Fare Enquiry"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:background="#03A9F4"
+
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#29B6F6"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="Enter Train number"
+                            android:singleLine="true"
+                            android:id="@+id/trainnumber"
+                            android:layout_gravity="center"
+                            android:textColorHint="#fff"
+                            android:drawableTint="#666"
+                            android:textSize="15dp"
+                            android:clickable="true"
+                            android:drawableEnd="@mipmap/ic_train"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:background="#039BE5"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#c0c0c0"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.51"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/moneybag"
+                        android:tint="#fff"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center"
+                        android:layout_height="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#c0c0c0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:background="#29B6F6"
+                    android:orientation="horizontal"
+
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#29B6F6"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="Enter Source station code"
+                            android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:textColorHint="#fff"
+                            android:textSize="15dp"
+                            android:clickable="true"
+                            android:drawableTint="#666"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:id="@+id/sourcestationedittext"
+                            android:drawableEnd="@mipmap/ic_bank_icon_finder"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:background="#29B6F6"
+                    android:orientation="horizontal"
+
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#29B6F6"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:clickable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="Enter Destination station code"
+                            android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:textColorHint="#fff"
+                            android:drawableTint="#666"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:id="@+id/destinationstationet"
+                            android:drawableEnd="@mipmap/ic_bank_icon_finder"
+                            android:typeface="serif"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.2"
+                    android:weightSum="3"
+                    android:background="#29B6F6"
+                    android:layout_gravity="start"
+
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageviewselectdate"
+                        android:tag="image_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="start"
+                        android:tint="#fff"
+                        android:clickable="true"
+                        android:src="@drawable/ic_date_range"/>
+
+                    <TextView
+                        android:id="@+id/textViewdateheading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Select Date"
+                        android:textColor="#333"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="dd-mm-yyyy"
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:id="@+id/imageviewDateselectedtextview"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.2"
+                    android:weightSum="3"
+                   android:layout_gravity="start"
+
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                  <!--  <ImageView
+                        android:id="@+id/imageViewff"
+                        android:tag="image_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="start"
+                        android:tint="#fff"
+                        android:src="@drawable/ic_man_women"/>-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="#29B6F6"
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#29B6F6"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="Enter passenger's age"
+                            android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:textColorHint="#fff"
+                            android:textSize="15dp"
+                            android:clickable="true"
+                            android:drawableTint="#666"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:id="@+id/passengersage"
+                            android:drawableEnd="@mipmap/ic_person_icon_finder"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.2"
+                    android:weightSum="3"
+                    android:background="#29B6F6"
+                    android:layout_gravity="start"
+                    android:padding="4dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                  <ImageView
+                        android:id="@+id/imageViewff"
+                        android:tag="image_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="start"
+                        android:tint="#fff"
+                      android:src="@mipmap/ic_seat_icon_finder"/>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Select Quota"
+                        android:textColor="#333"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:id="@+id/spinner_select_quota"
+                         android:entries="@array/spinner" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_search_fare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:background="#455A64"
+                    android:text="Search Fare"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

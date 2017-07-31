@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.apoo.railwayprojectapoorva.view.trainarrivalsatstation.TrainarrivalatstationDetailActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        card_view:cardBackgroundColor="#03A9F4"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:background="#455A64"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="start"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="2.3"
+                        android:src="@mipmap/ic_train"
+                        android:tag="image_tag"
+                        android:tint="#fff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/textview_number_availability_detail_mod"
+                        android:layout_weight=".7"
+                        android:text="Train Number"
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.9"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="left|center"
+                        android:layout_weight="1"
+                        android:text="Train Name"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:id="@+id/train_name_train_name_availability_detail_mod"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="12dp"
+                            android:singleLine="true"
+                            android:textStyle="normal"
+                            android:typeface="serif"
+                            android:text="Train Name"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_weight="2.5"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:weightSum="6"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Delay Departure"
+                                android:textColor="#fff"
+                                android:textSize="13dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".30"
+                                android:rotation="-90"
+                                android:src="@drawable/ic_tick_drop_down"
+                                android:tag="image_tag"
+                                android:tint="#455A64" />
+
+                            <TextView
+                                android:id="@+id/delay_departure_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="----"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="scheduled Arrival"
+                                android:textColor="#fff"
+                                android:textSize="13dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:tag="image_tag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".30"
+                                android:tint="#455A64"
+                                android:rotation="-90"
+                                android:src="@drawable/ic_tick_drop_down"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="----"
+                                android:id="@+id/schedule_arrival_tv"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="scheduled departure"
+                                android:textColor="#fff"
+                                android:textSize="13dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:tag="image_tag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".30"
+                                android:tint="#455A64"
+                                android:rotation="-90"
+                                android:src="@drawable/ic_tick_drop_down"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="----"
+                                android:id="@+id/schedule_departure_tv"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Actual departure"
+                                android:textColor="#fff"
+                                android:textSize="13dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:tag="image_tag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".30"
+                                android:tint="#455A64"
+                                android:rotation="-90"
+                                android:src="@drawable/ic_tick_drop_down"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="----"
+                                android:id="@+id/actual_departure_tv"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Actual Arrival"
+                                android:textColor="#fff"
+                                android:textSize="13dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:tag="image_tag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".30"
+                                android:tint="#455A64"
+                                android:rotation="-90"
+                                android:src="@drawable/ic_tick_drop_down"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="----"
+                                android:id="@+id/actual_arrival_tv"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Delay Arrival"
+                                android:textColor="#fff"
+                                android:textSize="13dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:tag="image_tag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".30"
+                                android:tint="#455A64"
+                                android:rotation="-90"
+                                android:src="@drawable/ic_tick_drop_down"/>
+
+                          <!--  <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".70"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="&#45;&#45;&#45;&#45;"
+                                android:id="@+id/delay_arrival_tv"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />-->
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:text="----"
+                                android:id="@+id/delay_arrival_tv"
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_weight=".30">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:tag="image_tag"
+                        android:layout_margin="9dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight=".30"
+                        android:layout_gravity="center"
+                        android:tint="#455A64"
+                        android:src="@mipmap/ic_arrival_timer_icon_finder"/>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:tag="image_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:tint="#455A64"
+                        android:src="@drawable/ic_more_vert"/>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:tag="image_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight=".30"
+                        android:layout_gravity="center"
+                        android:tint="#455A64"
+                        android:src="@drawable/ic_bank"/>
+
+                </LinearLayout>-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

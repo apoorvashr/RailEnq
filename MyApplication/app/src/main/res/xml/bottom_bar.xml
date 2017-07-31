@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_root"
+            inactiveColor="#ffffff"
+            icon="@mipmap/ic_train_root"
+            activeColor="#ffffff"
+            barColorWhenSelected="#90A4AE"
+            title="Root" />
+        <tab
+            id="@+id/tab_pnr"
+            inactiveColor="#ffffff"
+            icon="@mipmap/ic_train_live"
+            activeColor="#ffffff"
+            barColorWhenSelected="#90A4AE"
+
+            title="PNR" />
+        <tab
+            id="@+id/tab_seat"
+            icon="@mipmap/ic_train_cancel"
+            activeColor="#ffffff"
+            inactiveColor="#ffffff"
+            barColorWhenSelected="#90A4AE"
+            title="Seat status" />
+    </tabs>
+
+</PreferenceScreen>

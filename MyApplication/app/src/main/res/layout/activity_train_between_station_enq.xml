@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/container_linear_layout"
+    android:layout_height="match_parent">
+
+ <include layout="@layout/toolbar"></include>
+
+ <android.support.v4.widget.NestedScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="7dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#455A64"
+        android:orientation="horizontal">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="10">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="10"
+          android:orientation="horizontal"
+          android:padding="7dp"
+          android:weightSum="3">
+
+       <TextView
+           android:id="@+id/textview_number_fare_mod"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:textSize="23dp"
+           android:text="Search Trains"
+           android:gravity="center"
+           android:textColor="#fff"
+           />
+
+      </LinearLayout>
+
+     </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#29B6F6"
+        android:orientation="vertical">
+
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_weight="0.50"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:src="@drawable/icons8_bank_96"
+         android:tint="#fff"
+         />
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_marginLeft="4dp"
+         android:textColor="#fff"
+         android:textColorHint="#fff"
+         android:layout_height="wrap_content">
+
+      <AutoCompleteTextView
+          android:id="@+id/sourcestationstaedittexttrainbet"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:drawableEnd="@mipmap/ic_train"
+          android:hint="Enter Source station code"
+          android:textColor="#fff"
+          android:drawableTint="#fff"
+          android:textColorHint="#fff" />
+
+     </android.support.design.widget.TextInputLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:weightSum="3"
+         android:background="#039BE5"
+         android:orientation="horizontal"
+         android:layout_height="wrap_content">
+
+      <View
+          android:layout_width="0dp"
+          android:layout_weight="1.2"
+          android:layout_height="2dp"
+          android:layout_gravity="center"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:background="#c0c0c0"/>
+
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_weight="0.51"
+          android:layout_height="55dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_margin="4dp"
+          android:src="@drawable/railroad"
+          android:tint="#fff"
+          />
+      <View
+          android:layout_width="0dp"
+          android:layout_weight="1.2"
+          android:layout_gravity="center"
+          android:layout_height="2dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:background="#c0c0c0"/>
+     </LinearLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_marginLeft="4dp"
+         android:textColor="#fff"
+         android:textColorHint="#fff"
+         android:layout_height="wrap_content">
+
+      <AutoCompleteTextView
+          android:id="@+id/destinationstaedittexttrainbet"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:drawableEnd="@mipmap/ic_bank_icon_finder"
+          android:hint="Enter Destination station code"
+          android:textColor="#fff"
+          android:drawableTint="#fff"
+          android:textColorHint="#fff" />
+
+     </android.support.design.widget.TextInputLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_weight="1.2"
+         android:weightSum="3"
+         android:background="#29B6F6"
+         android:layout_gravity="start"
+
+         android:orientation="vertical"
+         android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/imageviewselectdatetrainbetweenstation"
+          android:tag="image_tag"
+          android:layout_width="match_parent"
+          android:layout_height="37dp"
+          android:layout_gravity="start"
+          android:tint="#fff"
+          android:clickable="true"
+          android:src="@drawable/ic_date_range"/>
+
+      <TextView
+          android:id="@+id/textViewdateheading"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Select Date"
+          android:textColor="#333"
+          android:textSize="20dp"
+          android:textStyle="bold"
+          android:typeface="serif" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:text="dd-mm-yyyy"
+          android:layout_gravity="center"
+          android:textColor="#fff"
+          android:id="@+id/imageviewDateselectedtextview"
+          android:textSize="19dp"
+          android:textStyle="bold"
+          android:typeface="serif"
+          />
+     </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:id="@+id/btn_show_train_trainbetweenstation"
+        android:text="Search Trains"
+        android:textColor="#fff"
+        android:background="#455A64" />
+
+   </LinearLayout>
+
+  </android.support.v7.widget.CardView>
+
+ </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

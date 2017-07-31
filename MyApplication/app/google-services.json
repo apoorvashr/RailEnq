@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "726591481408",
+    "firebase_url": "https://railenq-c447c.firebaseio.com",
+    "project_id": "railenq-c447c",
+    "storage_bucket": "railenq-c447c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726591481408:android:2b3132b92602a828",
+        "android_client_info": {
+          "package_name": "com.example.apoo.railwayprojectapoorva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726591481408-gr81h8q8ih7n18jcqt04ehd4f8g32103.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQAQyHTwGEZzbhUOQFEgN5KKAz34LB9Fw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

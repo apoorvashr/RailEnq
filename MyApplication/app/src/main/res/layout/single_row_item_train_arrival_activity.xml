@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear_container"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#03A9F4"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/avatarView"
+            android:layout_width="0dp"
+            android:layout_weight=".30"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="Train Name"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/train_name_train_Arrival_mod"
+            android:drawableTint="#fff"
+            android:textColor="#fff"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:layout_gravity="center_horizontal"
+            android:drawableTint="#fff"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/train_number_train_arrival"
+            android:text="Train Number"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

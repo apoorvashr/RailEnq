@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apoo.railwayprojectapoorva">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.trainbetweensta.TrnListActi" />
+        <activity android:name=".view.trainbetweensta.TrainbtwnEnqAct" />
+        <activity android:name=".view.drawer.DrawerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.trainbetweensta.TrainDtlsPgActiv" />
+        <activity android:name=".view.loginsignup.LoginActivity" />
+        <activity android:name=".view.loginsignup.SignupActivity" />
+        <activity android:name=".view.trainfare.TrainFareConneActi" />
+        <activity android:name=".view.trainarrivalsatsta.TrainarrivalatStationConnectionActivity" />
+        <activity
+            android:name=".view.trainarrivalsatsta.TrainArrivalAtStationEnquiryActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.trainfare.TrainFareEnquiAct" />
+        <activity
+            android:name=".view.trainarrivalsatsta.TrainarrivalatstationDetailActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+         <activity android:name=".view.root.TainRootClassesActivity" />
+        <activity android:name=".view.root.TrainRootEnqActivity" />
+        <activity android:name=".view.root.TrainRootConnActivity" />
+        <activity android:name=".view.trainnmnumbr.TraiNmEnquiAct" />
+        <activity android:name=".view.aboutus.AboutUsActivity"></activity>
+        <activity android:name=".view.profile.ProfileActi" />
+        <activity android:name=".view.trainnmnumbr.GetTrainNmFrmNoAct" />
+        <activity android:name=".view.livetrainstatus.LiveTraiEnqActivity" />
+        <activity android:name=".view.livetrainstatus.LiveTrainConActivity" />
+        <activity android:name=".view.canceltrain.CancelTrainEnqAct" />
+        <activity android:name=".view.canceltrain.CancelTConnActivity" />
+        <activity android:name=".view.reschedule.RescheEnqAct" />
+        <activity android:name=".view.reschedule.ReschConnAct" />
+        <activity android:name=".view.info.InfoAct"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_loan_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <!-- <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/form_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#455A64"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+
+                        <com.onurciner.fontchange.FTextView
+                            android:id="@+id/Class_code_tv"
+                            android:text="Class Code"
+                            android:layout_weight="1.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/form_margin"
+                            android:textColor="#fff"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:xfont="fonts/RobotoCondensed-Bold.ttf" />
+
+
+
+                        <com.onurciner.fontchange.FTextView
+                            android:layout_weight=".50"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:layout_gravity="end"
+                            android:drawableTint="#fff"
+                            android:drawableEnd="@mipmap/ic_seat_icon_finder"
+                            android:textStyle="bold"
+                            app:xfont="fonts/RobotoCondensed-Bold.ttf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80DEEA"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="vertical">
+
+
+                        <com.onurciner.fontchange.FTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Availability"
+                            android:textColor="#455A64"
+                            app:xfont="fonts/RobotoCondensed-Light.ttf" />
+
+                        <com.onurciner.fontchange.FTextView
+                            android:id="@+id/class_availibility"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/na"
+                            android:textColor="#fff"
+                            android:textSize="15sp"
+                            app:xfont="fonts/RobotoCondensed-Light.ttf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+-->
+</LinearLayout>
