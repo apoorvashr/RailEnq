@@ -1,76 +1,61 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    namespace 'com.example.apoo.railwayprojectapoorva'
+    compileSdk 33
+
     defaultConfig {
         applicationId "com.example.apoo.railwayprojectapoorva"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdk 21
+        targetSdk 33
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
+repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    })
-    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
 
-    //design support
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
 
-    //retrofit libraries
+    implementation 'com.google.firebase:firebase-auth-ktx:22.3.0'
 
-    //ok - http interpreter
+    implementation 'com.github.lukedeighton:wheelview:0.4.1'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 
-    //recyclerview
+    implementation 'com.github.rom4ek:arcnavigationview:1.0.3'
+    implementation 'com.github.florent37:ArcLayout:1.0.3'
+    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'com.squareup.picasso:2.71828'
 
-    //wheel view dependency
-
-
-    apply plugin: 'com.google.gms.google-services'
-
-    // compile 'com.github.10uroi:FontChange:2.0'
-
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.android.support:cardview-v7:25.0.0'
-    compile 'com.github.lukedeighton:wheelview:0.4.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.0.0'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
-    compile 'com.android.support:recyclerview-v7:25.0.0'
-    compile 'com.rom4ek:arcnavigationview:1.0.3'
-    compile 'com.android.support:support-v4:25.0.0'
-    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
-    compile 'com.android.volley:volley:1.0.0'
-    compile 'com.github.10uroi:FontChange:2.0'
-    compile 'com.github.TR4Android:Swipeable-RecyclerView:0.2.0'
-    compile 'com.ramotion.foldingcell:folding-cell:1.1.0'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.daimajia.slider:library:1.1.5@aar'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.roughike:bottom-bar:2.3.1'
-    compile 'com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1'
-    compile 'com.zcw:togglebutton-library:1.0.0'
-    compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.github.medyo:android-about-page:1.2'
-    compile 'com.jakewharton:butterknife:8.5.1'
-    testCompile 'junit:junit:4.12'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile 'com.google.firebase:firebase-auth:9.0.0'
-
-    apply plugin: 'com.google.gms.google-services'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

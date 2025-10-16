@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.apoo.railwayprojectapoorva">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,17 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".view.trainbetweensta.TrnListActi" />
         <activity android:name=".view.trainbetweensta.TrainbtwnEnqAct" />
-        <activity android:name=".view.drawer.DrawerActivity">
+        <activity android:name=".view.drawer.DrawerActivity" />
+        <activity android:name=".view.trainbetweensta.TrainDtlsPgActiv" />
+
+        <activity
+            android:name=".view.loginsignup.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.trainbetweensta.TrainDtlsPgActiv" />
-        <activity android:name=".view.loginsignup.LoginActivity" />
         <activity android:name=".view.loginsignup.SignupActivity" />
         <activity android:name=".view.trainfare.TrainFareConneActi" />
         <activity android:name=".view.trainarrivalsatsta.TrainarrivalatStationConnectionActivity" />
@@ -32,11 +35,12 @@
         <activity
             android:name=".view.trainarrivalsatsta.TrainarrivalatstationDetailActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-         <activity android:name=".view.root.TainRootClassesActivity" />
+
+        <activity android:name=".view.root.TainRootClassesActivity" />
         <activity android:name=".view.root.TrainRootEnqActivity" />
         <activity android:name=".view.root.TrainRootConnActivity" />
         <activity android:name=".view.trainnmnumbr.TraiNmEnquiAct" />
-        <activity android:name=".view.aboutus.AboutUsActivity"></activity>
+        <activity android:name=".view.aboutus.AboutUsActivity" />
         <activity android:name=".view.profile.ProfileActi" />
         <activity android:name=".view.trainnmnumbr.GetTrainNmFrmNoAct" />
         <activity android:name=".view.livetrainstatus.LiveTraiEnqActivity" />
@@ -45,7 +49,7 @@
         <activity android:name=".view.canceltrain.CancelTConnActivity" />
         <activity android:name=".view.reschedule.RescheEnqAct" />
         <activity android:name=".view.reschedule.ReschConnAct" />
-        <activity android:name=".view.info.InfoAct"></activity>
-    </application>
+        <activity android:name=".view.info.InfoAct" />
 
+    </application>
 </manifest>
